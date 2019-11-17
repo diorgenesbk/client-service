@@ -26,6 +26,13 @@ namespace Client.Service.Proxy.Controllers
         [HttpGet("data/{cpf}")]
         public ActionResult<ClientDataDto> GetClientData(string cpf)
         {
+            //TODO: 
+            // - implementar testes
+            // - implementar docker
+            // - implementar swagger
+            // - implementar identity
+            // - implementar validação jwt
+            // - conexão com mysql
             return this.PersonService.GetClientData(cpf);
         }
     }
