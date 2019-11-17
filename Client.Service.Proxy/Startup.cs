@@ -20,7 +20,7 @@ namespace Client.Service.Proxy
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ClientContext>(options =>
-              options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+              options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
