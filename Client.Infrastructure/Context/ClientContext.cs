@@ -16,6 +16,5 @@ namespace Client.Infrastructure.Context
             modelBuilder.Entity<Adress>(new AdressMap().Configure);
             modelBuilder.Entity<Debt>(new DebtMap().Configure);
         }
-
     }
 }
