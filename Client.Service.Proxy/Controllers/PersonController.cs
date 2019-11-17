@@ -29,10 +29,8 @@ namespace Client.Service.Proxy.Controllers
             //TODO: 
             // - implementar testes
             // - implementar docker
-            // - implementar swagger
             // - implementar identity
             // - implementar validação jwt
-            // - conexão com mysql
             return this.PersonService.GetClientData(cpf);
         }
     }
