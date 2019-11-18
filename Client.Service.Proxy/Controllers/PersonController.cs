@@ -2,6 +2,7 @@
 using Client.DataObject.Response;
 using Client.Infrastructure.Context;
 using Client.Service.Business;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Client.Service.Proxy.Controllers
@@ -28,9 +29,6 @@ namespace Client.Service.Proxy.Controllers
         {
             //TODO: 
             // - implementar testes
-            // - implementar docker
-            // - implementar identity
-            // - implementar validação jwt
             return this.PersonService.GetClientData(cpf);
         }
     }

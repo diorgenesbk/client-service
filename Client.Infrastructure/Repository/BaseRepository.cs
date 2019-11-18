@@ -9,9 +9,14 @@ namespace Client.Infrastructure.Repository
 {
     public class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
-        public ClientContext Context;
+        public DbContext Context;
 
         public BaseRepository(ClientContext context)
+        {
+            this.Context = context;
+        }
+
+        public BaseRepository(TokenContext context)
         {
             this.Context = context;
         }
