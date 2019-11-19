@@ -64,8 +64,6 @@ namespace Client.Service.Proxy
             services.AddDbContext<ClientContext>(options =>
               options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<TokenContext>(options =>
-              options.UseMySQL(Configuration.GetConnectionString("TokenConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSwaggerGen(c =>

@@ -15,6 +15,7 @@ namespace Client.Infrastructure.Context
             modelBuilder.Entity<Person>(new PersonMap().Configure);
             modelBuilder.Entity<Adress>(new AdressMap().Configure);
             modelBuilder.Entity<Debt>(new DebtMap().Configure);
+            modelBuilder.Entity<User>(new UserMap().Configure);
         }
     }
 }
