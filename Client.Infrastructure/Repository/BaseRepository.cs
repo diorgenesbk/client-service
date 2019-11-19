@@ -16,11 +16,6 @@ namespace Client.Infrastructure.Repository
             this.Context = context;
         }
 
-        public BaseRepository(TokenContext context)
-        {
-            this.Context = context;
-        }
-
         public void Insert(T obj)
         {
             this.Context.Set<T>().Add(obj);

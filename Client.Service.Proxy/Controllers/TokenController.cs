@@ -19,7 +19,7 @@ namespace Client.Service.Proxy.Controllers
     {
         protected UserService UserService { get; set; }
 
-        public TokenController(TokenContext context)
+        public TokenController(ClientContext context)
         {
             this.UserService = new UserService(context);
         }

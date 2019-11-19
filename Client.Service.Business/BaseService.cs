@@ -16,11 +16,6 @@ namespace Client.Service.Business
             this.Repository = new BaseRepository<T>(context);
         }
 
-        public BaseService(TokenContext context)
-        {
-            this.Repository = new BaseRepository<T>(context);
-        }
-
         public T Insert<V>(T obj)
         {
             this.Repository.Insert(obj);

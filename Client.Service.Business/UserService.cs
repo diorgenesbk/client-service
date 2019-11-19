@@ -10,8 +10,6 @@ namespace Client.Service.Business
 {
     public class UserService : BaseService<User>
     {
-        public UserService(TokenContext context) : base(context) { }
-
         public UserService(ClientContext context) : base(context)
         {
         }
